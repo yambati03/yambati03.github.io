@@ -5,3 +5,7 @@
 .clip-circle {
   clip-path: circle(60px at center);
 }
+
+body {
+  background-color: #10122b;
+}
