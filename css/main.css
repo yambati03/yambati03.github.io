@@ -13,3 +13,7 @@
 body {
   background-color: #10122b;
 }
+
+a {
+    text-decoration: none;
+}
