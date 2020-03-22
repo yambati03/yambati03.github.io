@@ -1,3 +1,7 @@
 .landing {
   font-family: 'Montserrat', sans-serif;
 }
+
+.clip-circle {
+  clip-path: circle(60px at center);
+}
