@@ -1,6 +1,9 @@
 .landing {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
   color:#FFF;
 }
 
@@ -16,4 +19,5 @@ body {
 
 a {
     text-decoration: none;
+    color: #9194ba;
 }
