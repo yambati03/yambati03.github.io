@@ -7,12 +7,14 @@
   color:#FFF;
 }
 
+.circle_wrap {
+  filter: drop-shadow(2px 6px 3px rgba(50, 50, 0, 0.5));
+}
+
 .clip-circle {
   width: 200px;
   margin: 20px;
   clip-path: circle(100px at center);
-  border-radius: 105px;
-  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
 }
 
 body {
