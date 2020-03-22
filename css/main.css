@@ -122,10 +122,6 @@
   color:#FFF;
 }
 
-.circle-wrap {
-  filter: drop-shadow(2px 6px 3px rgba(50, 50, 50, 0.5));
-}
-
 .clip-circle {
   width: 200px;
   margin: 20px;
@@ -133,14 +129,10 @@
 }
 
 body {
-  background-color: #10122b url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/noise-bg.png) repeat 0 0;
+  background-color: #10122b;
 }
 
 a {
   color: #9194ba;
   text-decoration: none;
-
-  &:hover {
-    color: lighten(#abafdb, 15%);
-  }
 }
