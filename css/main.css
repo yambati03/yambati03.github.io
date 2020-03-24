@@ -28,20 +28,23 @@
 }
 
 .btn-floating {
-  color: #9194ba;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 15px;
-  text-transform: uppercase;
   padding: 10px 10px;
   margin: 2rem;
   text-align: center;
+  border: 2px solid #9194ba;
+  background-color: #10122b;
+  color: #9194ba;
+  cursor: pointer;
   border-radius: 4px;
   transition-duration: 0.1s;
 }
 
-.btn-floating:hover {
+.nav:hover {
   color: #FFF;
+  background-color: #9194ba;
   cursor: pointer;
 }
 
