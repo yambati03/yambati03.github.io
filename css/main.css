@@ -38,12 +38,11 @@
   background-color: #10122b;
   color: #9194ba;
   cursor: pointer;
-  border-radius: 4px;
   transition-duration: 0.1s;
 }
 
 .nav:hover {
-  color: #FFF;
+  color: #10122b;
   background-color: #9194ba;
   cursor: pointer;
 }
