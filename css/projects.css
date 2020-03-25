@@ -11,14 +11,6 @@
   transition-duration: 0.1s;
 }
 
-.linkedin:hover {
-    color: #FFF;
-}
-
-.envelope:hover {
-    color: #FFF;
-}
-
 .github:hover {
     color: #FFF;
 }
@@ -47,28 +39,22 @@
   cursor: pointer;
 }
 
-.landing {
+.header {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #e1e2eb;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.projects {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
-  position: fixed;
-  margin: auto;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color:#FFF;
-}
-
-.clip-circle {
-  width: 200px;
-  margin: 20px;
-  clip-path: circle(100px at center);
-}
-
-body {
-  background-color: #10122b;
-}
-
-a {
-  color: #9194ba;
+  font-size: 8px;
   text-decoration: none;
+}
+
+html, body {
+  margin:0;
+  padding:0;
 }

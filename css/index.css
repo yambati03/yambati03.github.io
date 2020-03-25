@@ -1,0 +1,80 @@
+.social {
+    border-radius: 2px;
+    margin: 2rem 0;
+    font-size: 2rem;
+    white-space: nowrap;
+}
+
+.social a {
+  text-decoration: none;
+  margin: 5px;
+  transition-duration: 0.1s;
+}
+
+.linkedin:hover {
+    color: #FFF;
+}
+
+.envelope:hover {
+    color: #FFF;
+}
+
+.github:hover {
+    color: #FFF;
+}
+
+.buttons {
+  margin: 5rem;
+}
+
+.btn-floating {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 10px 10px;
+  margin: 2rem;
+  text-align: center;
+  border: 2px solid #9194ba;
+  background-color: #10122b;
+  color: #9194ba;
+  cursor: pointer;
+  transition-duration: 0.1s;
+}
+
+.nav:hover {
+  color: #10122b;
+  background-color: #9194ba;
+  cursor: pointer;
+}
+
+.landing {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  position: fixed;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:#FFF;
+}
+
+.clip-circle {
+  width: 200px;
+  margin: 20px;
+  clip-path: circle(100px at center);
+}
+
+body {
+  background-color: #10122b;
+}
+
+a {
+  color: #9194ba;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FFF;
+  cursor: pointer;
+  transition-duration: 0.1s;
+}
