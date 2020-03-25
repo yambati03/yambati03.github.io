@@ -24,26 +24,23 @@
 }
 
 .buttons {
-  margin: 5rem;
+  margin: 4rem;
+  text-align: right;
 }
 
 .btn-floating {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat';
   font-weight: bold;
   font-size: 15px;
-  padding: 10px 10px;
-  margin: 2rem;
   text-align: center;
-  border: 2px solid #9194ba;
-  background-color: #10122b;
   color: #9194ba;
   cursor: pointer;
   transition-duration: 0.1s;
+  padding-right: 2rem;
 }
 
 .nav:hover {
-  color: #10122b;
-  background-color: #9194ba;
+  color: #fff;
   cursor: pointer;
 }
 
@@ -65,7 +62,8 @@
 }
 
 body {
-  background-color: #10122b;
+  background: rgb(74,77,117);
+  background: linear-gradient(0deg, rgba(74,77,117,1) 0%, rgba(16,18,43,1) 100%);
 }
 
 a {
