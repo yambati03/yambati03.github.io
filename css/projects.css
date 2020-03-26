@@ -15,46 +15,86 @@
     color: #FFF;
 }
 
-.buttons {
-  margin: 5rem;
-}
-
 .btn-floating {
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-  font-size: 15px;
-  padding: 10px 10px;
-  margin: 2rem;
   text-align: center;
-  border: 2px solid #9194ba;
-  background-color: #10122b;
   color: #9194ba;
   cursor: pointer;
   transition-duration: 0.1s;
+  padding-right: 80px;
 }
 
-.nav:hover {
-  color: #10122b;
-  background-color: #9194ba;
+.btn-floating span {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 6px;
+}
+
+.btn-floating:hover {
+  color: #fff;
   cursor: pointer;
 }
 
 .header {
-  font-family: 'Montserrat', sans-serif;
-  background-color: #e1e2eb;
   height: 50%;
+  background: rgb(74,77,117);
+  background: linear-gradient(0deg, rgba(74,77,117,1) 0%, rgba(16,18,43,1) 100%);
+}
+
+.title {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  height: 70%;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.nav {
+  text-align: left;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .projects {
   font-family: 'Montserrat', sans-serif;
-  text-align: center;
-  font-size: 8px;
+  font-size: 6px;
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  background-color: white;
+  padding: 10px;
+  margin-top: 5px;
+  width: 50%;
+}
+
+.card a {
+  color: #10122b;
+}
+
+.card a:hover {
+  color: #9194ba;
+  transition-duration: 0.1s;
+}
+
+.card hr {
+  opacity: 20%;
+}
+
+.date {
+    opacity: 50%;
+    font-size: 5px;
 }
 
 html, body {
   margin:0;
   padding:0;
+}
+
+a {
+  text-decoration: none;
 }
