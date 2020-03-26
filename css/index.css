@@ -24,8 +24,9 @@
 }
 
 .nav {
-  margin: 40px;
-  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
 }
 
 .btn-floating {
@@ -33,7 +34,7 @@
   color: #9194ba;
   cursor: pointer;
   transition-duration: 0.1s;
-  padding-right: 80px;
+  padding-right: 2rem;
 }
 
 .btn-floating span {
