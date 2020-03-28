@@ -1,22 +1,3 @@
-.btn-floating {
-  text-align: center;
-  color: #9194ba;
-  cursor: pointer;
-  transition-duration: 0.1s;
-  padding-right: 80px;
-}
-
-.btn-floating span {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  font-size: 15px;
-}
-
-.btn-floating:hover {
-  color: #fff;
-  cursor: pointer;
-}
-
 .header {
   height: 50%;
   background: rgb(74,77,117);
@@ -33,12 +14,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.nav {
-  display: flex;
-  justify-content: flex-start;
-  padding: 20px;
 }
 
 .projects {

@@ -23,31 +23,6 @@
     color: #FFF;
 }
 
-.nav {
-  display: flex;
-  justify-content: flex-end;
-  padding: 20px;
-}
-
-.btn-floating {
-  text-align: center;
-  color: #9194ba;
-  cursor: pointer;
-  transition-duration: 0.1s;
-  padding-right: 2rem;
-}
-
-.btn-floating span {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  font-size: 15px;
-}
-
-.btn-floating:hover {
-  color: #fff;
-  cursor: pointer;
-}
-
 .landing {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
