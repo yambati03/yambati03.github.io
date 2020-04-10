@@ -1,0 +1,56 @@
+.header {
+  height: 40%;
+  background: rgb(74,77,117);
+  background: linear-gradient(0deg, rgba(74,77,117,1) 0%, rgba(16,18,43,1) 100%);
+}
+
+.header-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 60%;
+  padding: 50px;
+}
+
+.title {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  font-size: 50px;
+  font-weight: bold;
+  opacity: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.date {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  font-size: 20px;
+  opacity: 10%;
+  height: 20%;
+}
+
+.post_body {
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.post_body p, code, a {
+  width: 40%;
+  line-height: 30px;
+}
+
+html, body {
+  margin:0;
+  padding:0;
+}
+
+a {
+  color: #9194ba;
+  text-decoration: none;
+}
