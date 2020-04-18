@@ -34,15 +34,47 @@
 
 .post_body {
   font-family: 'Montserrat', sans-serif;
+  padding: 20px;
   text-decoration: none;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.post_body p, code, a {
-  width: 40%;
+.post_body p, code, a, ul {
+  width: 45%;
   line-height: 30px;
+}
+
+ul {
+  width: 35%;
+  padding: 10px;
+}
+
+.term {
+  color: #FFF;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.healthy {
+  background-color: #3ba852;
+}
+
+.infected {
+  background-color: #d43949;
+}
+
+.incubation {
+  background-color: #dce05c;
+}
+
+.recovered {
+  background-color: #646464;
+}
+
+.deceased {
+  background-color: #464646;
 }
 
 html, body {
@@ -50,7 +82,19 @@ html, body {
   padding:0;
 }
 
+video {
+  margin-bottom: 10px;
+}
+
+h3 {
+  padding: 20px;
+}
+
 a {
   color: #9194ba;
+  text-decoration: none;
+}
+
+a:hover{
   text-decoration: none;
 }

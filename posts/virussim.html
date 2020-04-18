@@ -1,9 +1,10 @@
 <html>
 	<head>
-		<title>Simulating an Empidemic</title>
+		<title>Simulating a Pandemic</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="../css/post.css">
     <link rel="stylesheet" href="../css/main.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body>
 		<div class=header>
@@ -11,12 +12,37 @@
 				<a href="../pages/projects.html" class="btn-floating"><span>BACK</span></a>
 			</div>
 			<div class=header-body>
-				<div class=title>Simulating an Epidemic</div>
+				<div class=title>Simulating an Pandemic</div>
 				<div class=date>20 APRIL 2020</div>
 			</div>
 		</div>
     <div class=post_body>
-			<p>Recently, I watched an <a href="https://youtu.be/gxAaO2rsdIs" target="_blank">amazing video</a> by the one and only 3Blue1Brown where he built a toy SIR model for simulating and epidemic.</p>
+			<p>Recently, I watched an <a href="https://youtu.be/gxAaO2rsdIs" target="_blank">amazing video</a> by Grant Sanderson from <a href="https://www.3blue1brown.com/">3Blue1Brown</a> in which he explores how different factors affect the spread of disease using a toy SIR model.
+				I suggest checking it out! After watching his video, I decided to code up my own version of the simulation to try and explore a few more things.
+			</p>
+			<p> In our simulation, we use proximity to determine transmission. This is the basic model: </p>
+			<ul>
+			  <li>When a <span class="term healthy">healthy</span> person comes within a set radius of an <span class="term infected">infected</span> person, they have a chance of also becoming infected. </li>
+			  <li>Once a person becomes <span class="term infected">infected</span>, they first enter an <span class="term incubation">incubation</span> period where they show no signs or symptoms, but can still spread the disease. </li>
+			  <li>They are then removed after a period of time. That is, they have a chance of becoming <span class="term recovered">recovered</span> or <span class="term deceased">deceased</span> at which point they cannot get infected or infect anyone else.</li>
+			</ul>
+			<p> This model, in its simplest form, looks like this: </p>
+			<video autoplay muted loop width="30%" controls><source src="../assets/basicmodel.mp4" type="video/mp4"></video>
+			<p> As you can see, our entire population gets infected very quickly. We can slow disease transmission by introducing quarantining: </p>
+			<ul>
+			  <li>After a person becomes <span class="term infected">infected</span>, they are moved to quarantine after 1 day where they cannot infect any <span class="term healthy">healthy</span> people </li>
+			  <li>Quarantining is triggered after the population passes a threshold of <span class="term infected">infected</span> people </li>
+			</ul>
+			<p> Our model, now with a quarantining response. </p>
+			<video autoplay muted loop width="30%" controls><source src="../assets/basicquarantine.mp4" type="video/mp4"></video>
+			<h3> It's in the air! </h3>
+			<p> I came across <a href="https://www.nytimes.com/interactive/2020/04/14/science/coronavirus-transmission-cough-6-feet-ar-ul.html">this</a> article from the New York Times that investigates virus transmission
+				through respiratory droplets to explain the six-feet rule— and why it doesn’t just end there. </p>
+			<p>This is what caught my eye: “small droplets known as <b>aerosols can remain suspended or travel through the air</b> before they eventually settle on surfaces.”
+				This means that when someone coughs or sneezes, the expelled droplets can be suspended in the air for more than <b>20 minutes</b>.
+				So, does this mean that even if we maintain our six-feet rule, it may be ineffective in central hubs such as grocery stores?
+				Let’s see what happens when we introduce these latent droplets to our population.</p>
+			<p> Let’s introduce a central hub to our population: </p>
 			<a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html" target="_blank">CDC</a>
     </div>
 	</body>
