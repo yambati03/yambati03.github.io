@@ -41,8 +41,7 @@
 }
 
 body {
-  background: rgb(74,77,117);
-  background: linear-gradient(0deg, rgba(74,77,117,1) 0%, rgba(16,18,43,1) 100%);
+  background: linear-gradient(-45deg, rgba(74,77,117,1) 0%, rgba(16,18,43,1) 100%);
 }
 
 a {

@@ -1,0 +1,19 @@
+.healthy {
+  background-color: #3ba852;
+}
+
+.infected {
+  background-color: #d43949;
+}
+
+.incubation {
+  background-color: #dce05c;
+}
+
+.recovered {
+  background-color: #646464;
+}
+
+.deceased {
+  background-color: #464646;
+}

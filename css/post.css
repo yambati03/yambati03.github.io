@@ -1,7 +1,9 @@
+.nav {
+  background: linear-gradient(-45deg, rgba(74,77,117,1) 0%, rgba(16,18,43,1) 100%);
+}
+
 .header {
   height: 40%;
-  background: rgb(74,77,117);
-  background: linear-gradient(0deg, rgba(74,77,117,1) 0%, rgba(16,18,43,1) 100%);
 }
 
 .header-body {
@@ -14,10 +16,8 @@
 
 .title {
   font-family: 'Montserrat', sans-serif;
-  color: #fff;
-  font-size: 50px;
+  font-size: 38px;
   font-weight: bold;
-  opacity: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,9 +26,8 @@
 
 .date {
   font-family: 'Montserrat', sans-serif;
-  color: #fff;
-  font-size: 20px;
-  opacity: 10%;
+  font-size: 16px;
+  opacity: 40%;
   height: 20%;
 }
 
@@ -70,33 +69,13 @@ ul {
   border-radius: 5px;
 }
 
-.healthy {
-  background-color: #3ba852;
-}
-
-.infected {
-  background-color: #d43949;
-}
-
-.incubation {
-  background-color: #dce05c;
-}
-
-.recovered {
-  background-color: #646464;
-}
-
-.deceased {
-  background-color: #464646;
+html, body {
+  margin:0;
+  padding:0;
 }
 
 .video-row {
   text-align: center;
-}
-
-html, body {
-  margin:0;
-  padding:0;
 }
 
 video {
