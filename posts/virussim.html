@@ -8,14 +8,12 @@
 		<link rel="stylesheet" href="../css/virussim.css">
 	</head>
 	<body>
-		<div class=header>
-			<div class=nav>
-				<a href="../pages/projects.html" class="btn-floating"><span>BACK</span></a>
-			</div>
-			<div class=header-body>
-				<div class=title>Simulating a Pandemic</div>
-				<div class=date>April 20, 2020</div>
-			</div>
+		<div class=nav>
+			<a href="../pages/projects.html" class="btn-floating"><span>Back</span></a>
+		</div>
+		<div class=header-top>
+			<div class=title>Simulating a Pandemic</div>
+			<div class=date>April 20, 2020</div>
 		</div>
     <div class=post_body>
 			<p>Recently, I watched an <a href="https://youtu.be/gxAaO2rsdIs" target="_blank">amazing video</a> by Grant Sanderson from <a href="https://www.3blue1brown.com/" target="_blank">3Blue1Brown</a> in which he explores how different factors affect the spread of disease using a toy SIR model.
@@ -53,15 +51,27 @@
 			<p> I came across <a href="https://www.nytimes.com/interactive/2020/04/14/science/coronavirus-transmission-cough-6-feet-ar-ul.html" target="_blank">this</a> article from the New York Times that investigates virus transmission
 				through respiratory droplets to explain the six-feet rule— and why it doesn’t just end there. </p>
 			<p>This is what caught my eye: “small droplets known as <b>aerosols can remain suspended or travel through the air</b> before they eventually settle on surfaces.”
-				This means that when someone coughs or sneezes, the expelled droplets can be suspended in the air for more than <b>20 minutes</b>.
-				So, does this mean that even if we maintain our six-feet rule, it may be ineffective in central hubs such as grocery stores?
-				Let’s see what happens when we introduce these latent droplets to our population.</p>
-			<p> Let’s introduce a central hub to our population: </p>
+				This means that when someone coughs or sneezes, the expelled droplets can be suspended in the air for more than <b>20 minutes</b>. </p>
+			<p> Let’s see what happens when we introduce these latent droplets to our population: </p>
 			<ul>
-				<li>Each non-<span class="term deceased">deceased</span> person has a chance of travelling to the hub where they walk around for a set time and return to their original position in the environment.</li>
-				<li>An <span class="term infected">infected</span> person has a chance of leaving an “infectious circle,” a proxy for suspended aerosols from coughs or sneezes.</li>
+				<li>An <span class="term infected">infected</span> person has a chance of generating an <b>infectious circle</b>, a proxy for suspended aerosols.</li>
+				<li><span class="term healthy">Healthy</span> individuals inside the circle’s radius have a chance of becoming <span class="term infected">infected</span>. This less than the aforementioned chance of infection.</li>
 			</ul>
+			<p> The video on the left shows the simulation with aerosols, while the one on the right shows the same simulation <b>without</b> aerosols. Note the peak heights of the corresponding graphs below each simulation. </p>
+			<div class="video-row">
+				<video autoplay muted loop width="30%" controls><source src="../assets/aerosol.mp4" type="video/mp4">Your browser does not support the video tag</video>
+				<video autoplay muted loop width="30%" controls><source src="../assets/noaerosol.mp4" type="video/mp4">Your browser does not support the video tag</video>
+			</div>
+			<div class="video-row">
+				<img width="30%" src="../assets/graph_aerosol.png"></img>
+				<img width="30%" src="../assets/graph_noaerosol.png"></img>
+			</div>
+			<p>So, does this mean that even if we maintain our six-feet rule, it may be ineffective? Probably not as pronounced as in the simulation, but maybe.
+				This suggests that wearing a mask makes a big difference— as the article states, it disrupts the normal trajectory of droplets from a cough or sneeze.</p>
 			<p> The code for this project can be found <a href="https://github.com/yambati03/covid_sim" target="_blank">here.</a> </p>
+			<h3> When do we ease up? </h3>
+			<p> This is a big one. If we ease restrictions too early, the curve could balloon. But we also don’t want to be restricted forever.
+				<a href="https://www.nytimes.com/interactive/2020/03/25/opinion/coronavirus-trump-reopen-america.html">This</a> opinion piece from the New York Times has a pretty cool interactive visualization that shows us this. </p>
 			<div class="note">
 				<p><b>NOTE</b></p>
 				<p> I am not an epidemiologist. These simulations are an oversimplification of reality and are based solely on my personal research. </p>
